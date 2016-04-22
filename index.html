@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="common.css" rel="stylesheet" type="text/css" media="all">
+
+    <title>簡単剣道スコア表</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <h1>剣道スコア表</h1>
+    <table border="1">
+      <tr>
+        <td class="col1">先鋒</td>
+        <td class="col2">次鋒</td>
+        <td class="col3">中堅</td>
+        <td class="col4">副将</td>
+        <td class="col5">大将</td>
+        <td>取得本数</td>
+        <td>勝数</td>
+        <td>勝敗</td>
+      </tr>
+      <tr>
+        <td class="col1"><input type="text"></td>
+        <td class="col2"><input type="text"></td>
+        <td class="col3"><input type="text"></td>
+        <td class="col4"><input type="text"></td>
+        <td class="col5"><input type="text"></td>
+        <td id = "mScore" rowspan="2"></td>
+        <td id = "mWinNum" rowspan="2"></td>
+        <td id = "mWin" rowspan="2"></td>
+      </tr>
+      <tr>
+        <td id = "m1" class="col1"></td>
+        <td id = "m2" class="col2"></td>
+        <td id = "m3" class="col3"></td>
+        <td id = "m4" class="col4"></td>
+        <td id = "m5" class="col5"></td>
+      </tr>
+      <tr>
+        <td id = "Em1" class="col1"></td>
+        <td id = "Em2" class="col2"></td>
+        <td id = "Em3" class="col3"></td>
+        <td id = "Em4" class="col4"></td>
+        <td id = "Em5" class="col5"></td>
+        <td id = "eScore" rowspan="2"></td>
+        <td id = "eWinNum" rowspan="2"></td>
+        <td id = "eWin" rowspan="2"></td>
+      </tr>
+        <tr>
+        <td class="col1"><input type="text"></td>
+        <td class="col2"><input type="text"></td>
+        <td class="col3"><input type="text"></td>
+        <td class="col4"><input type="text"></td>
+        <td class="col5"><input type="text"></td>
+        </tr>
+    </table>
+
+    <button id="men" class="myBtn">味方メン</button>
+    <button id="ko" class="myBtn">味方コテ</button>
+    <button id="do" class="myBtn">味方ドウ</button>
+    <button id="tu" class="myBtn">味方ツキ</button>
+    <button id="ha" class="myBtn">味方反則</button>
+    <button id="hu" class="myBtn">味方不戦勝</button>
+    <button id="next" class="actBtn">次へ</button>
+    <br/>
+
+    <button id="Enemen" class = "enBtn">敵メン</button>
+    <button id="Eneko" class = "enBtn">敵コテ</button>
+    <button id="Enedo" class = "enBtn">敵ドウ</button>
+    <button id="Enetu" class = "enBtn">敵ツキ</button>
+    <button id="Eneha" class = "enBtn">敵反則</button>
+    <button id="Enehu" class = "enBtn">敵不戦勝</button>
+    <button id="undo" class="actBtn">取り消し</button>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="http://yukikuroshima.github.io/KendoScoreboardENGver/">
+        <p class="text-muted">Use English Ver.</p>
+        </a>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="common.js" charset="UTF-8"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+  </body>
+</html>
